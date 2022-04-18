@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+<head>
+    <title>GHPS BALESAR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="balesar.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    
+    <style>
+    .modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    /*paddin`g-top: 100px;*/ /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+        input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 0px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+		
+		<style>
+
+/* The Modal (background) */
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content1 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close1 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+
+</head>
+<body style="background-color: white;overflow-x: hidden; " >
+    <div style="background-color:antiquewhite;height:100px;" id="h">
+        <img src="images/govt_logo.jpg" align="left" width="100px" height="100px" style ="position: relative; left: 350px">
+    <h1 style="font-family: 'Exo', sans-serif;"><STRONG>ಸ ಹಿ ಪ್ರಾ ಶಾಲೆ ಬಾಳೇಸರ</STRONG></h1>
+    </div>
+    
+
+  <ul>
+    <li><a href="balesar_home.html" style=" width: 30px;height:20px"><img src="images/home.png" height=25px width=25px ></a>
+		<li style="font-size: 20px"><a href="about_us.html">About Us</a></li>
+      <li style="font-size: 20px"><a href="teachers.html">Teachers</a></li>
+      <li style="font-size: 20px"><a href="sdmc.html">SDMC</a></li>
+      <li style="font-size: 20px"><a href="donors.html">Donators</a></li>
+      <li style="font-size: 20px"><a href="gallery.html">Gallery</a></li>
+       <li class="motor" style="font-size: 20px">
+      <a href="javascript:void(0)" class="dropbtn">Students</a>
+      <div class="motor-cycle" style="font-size:17px;">
+        <a href="standard_1.html">1st standard</a>
+        <a href="standard_2.html">2nd standard</a>
+		<a href="standard_3.html">3rd standard</a>
+        <a href="standard_4.html">4th standard</a>
+		<a href="standard_5.html">5th standard</a>
+        <a href="standard_6.html">6th standard</a>
+		<a href="standard_7.html">7th standard</a>
+      </div>
+    </li>
+        <li style="font-size: 20px"><a href="learn.html">Learning Corner</a></li>
+	  <li style="font-size: 20px"><a href="service.html">Services</a></li>
+	        
+<button id="myBtn" style="font-size: 20px;float:right;background-color:lightblue;border: none;position: relative;top:13px;left:-10px;font-family:inherit">Contact Us</button>
+  </ul>
+  
+  <div class="columnd">
+        <div class="service1">
+            
+            <h2 style="color:black; font-size:20px; position: relative;left:500px;">Your YAMAHA deserves the best</h2>
+            <pre style="position: relative;left:500px;font-size:18px;font-family:serif">YAMAHA's official dealers are the most suited to perform your bike's 
+service since they receive dedicated training on YAMAHA's products 
+regularly.  Besides that, they have gained the best experience over
+the years with YAMAHA products.  They also make sure that when 
+your YAMAHA is being serviced,  Genuine YAMAHA Parts and 
+Yamalube products are used.</pre>
+            <p style="position: relative;top:10px;left:500px;font-size: 20px;color:brown;">Click on the model to get the service schedule information</p>
+   <div class="service">
+            
+            <h2 style="color:black; font-size:35px;position: relative;top: -1400px;left : 100px;">ಶಾಲೆಯಲ್ಲಿರುವ ಸೌಲಭ್ಯಗಳು :</h2>
+            <div class="vertical-menu" style="position: relative;top:-1400px; left : 100px;">
+  <a href="schedule.html" >* ಕಲಿಕಾ ಸ್ನೆಹಿ ವಾತಾವರಣ ಮತ್ತು ಸುಂದರವಾದ ಕಟ್ಟಡ</a>
+  <a href="warranty.html">* ಅನುಭವಿ ಹಾಗೂ ಕ್ರಿಯಾಶೀಲ ಶಿಕ್ಷಕವೃಂಧ</a>
+  <a href="camp.html">* ಇ ಕಲಿಕಾ ವ್ಯವಸ್ಥೆ</a>
+  <a href="training.html">* ಉತ್ತಮವಾದ ಗ್ರಂಥಾಲಯ ವ್ಯವಸ್ಥೆ</a>
+				  <a href="schedule.html" >* ಕಂಪ್ಯೂಟರ್ ವ್ಯವಸ್ಥೆ</a>
+  <a href="warranty.html">* ಉಚಿತ ಪಠ್ಯಪುಸ್ತಕ </a>
+  <a href="camp.html">* ಉಚಿತ ಸಮವಸ್ತ್ರ </a>
+  <a href="training.html">* ಉಚಿತ ಬಿಸಿಯೂಟ ವ್ಯವಸ್ಥೆ</a>
+				<a href="schedule.html" >* ಕ್ಷೀರ ಭಾಗ್ಯ ಯೋಜನೆ</a>
+  <a href="warranty.html">* ಉಚಿತ ವೈದ್ಯಕೀಯ ಪರೀಕ್ಷೆ </a>
+  <a href="camp.html">* ಶುದ್ಧ ಕುಡಿಯುವ ನೀರಿಗಾಗಿ uv ಪಿಲ್ಟರ್ ವ್ಯವಸ್ಥೆ </a>
+  <a href="training.html">* ಮಕ್ಕಳ ಆನಂದಕ್ಕಾಗಿ ಉತ್ತಮವಾದ ಆಟದ ಮೈದಾನ ಮತ್ತು ಆಟದ ಸಾಮಗ್ರಿಗಳು</a>
+<a href="schedule.html" >* ಪ್ರಾರ್ಥನೆ ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಕ್ಕಾಗಿ ವಿಶಾಲವಾದ ಸಭಾಭವನ</a>
+	   </div>
+	   
+	</div>
+	
+	<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content1" style="position: relative;top: 100px;background-color: black">
+    <span class="close1">&times;</span>
+    <h2 style="color: white;height:10px;">CONTACT US:</h2>
+	<img src="images/locate.png"  height="35" width="35">
+  <h3 style="height:10px;color:white;position: relative;top:-50px;left:50px;"><pre>GHPS Balesar
+At    : Balesar,
+Taluk :  Siddapur, 
+Uttara Kannada -581340
+</pre></h3>
+    <img src="images/phone.jpg"  height="25" width="25">
+    <h3 style="height:10px;color:white;position: relative;top:-46px;left:50px;"> 08389 295500</h3>
+    <img src="images/mail.jpg"  height="35" width="35" style="position: relative;top:-30px;"><h3 style="height:10px;color:white;position: relative;top:-80px;left:50px;">   hpsbalesar@gmail.com
+	  </h3>
+		</div>
+	</div>
+
+
+
+
+
+	
+	
+    
+
+
+<!--<footer style="width:1240px;height: 200px;position: ">
+    <h2 style="color: white;height:10px;">CONTACT US:</h2>
+    <img src="image/locate.png"  height="35" width="35">
+  <h3 style="height:10px;color:white;position: relative;top:-50px;left:50px;"><pre>A-3, Industrial Area, Noida-Dadri Road,
+Surajpur -201306
+Distt. Gautam Budh Nagar (U.P.) India.</pre></h3>
+    <img src="image/phone.jpg"  height="25" width="25">
+    <h3 style="height:10px;color:white;position: relative;top:-50px;left:50px;"> +91 120 2350695, 2350634, 6718210</h3>
+    <img src="image/mail.jpg"  height="35" width="35" style="position: relative;top:-30px;">
+    <h3 style="height:10px;color:white;position: relative;top:-80px;left:50px;">   yes@yamaha-motor-india.com<pre  >Copyright © India YAMAHA Motor Pvt. Ltd. All rights reserved</pre></h3>
+</footer>
+
+ --><script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close1")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+    </body>
+</html>
