@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>GHPS BALESAR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="balesar.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
     
@@ -9,7 +10,7 @@
     .modal {
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    /*paddin`g-top: 100px;*/ /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -123,48 +124,204 @@ input[type=submit]:hover {
         margin-top: 0;
     }
 }
+		.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
 
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+		
+		
+
+/* The Modal (background) */
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content1 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close1 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 </style>
+
+
 </head>
-<body style="width:1115px;background-color: black;overflow-x: hidden;" >
-    <div style="background-color:darkcyan;height:150px;" id="h">
-        <img src="image/yamaha.png" align="left" width="100px" height="100px" style="position: relative;left:400px;">
-    <h1 style="font-family: 'Exo', sans-serif;"><STRONG>GHPS BALESAR</STRONG></h1>
+<body style="background-color: black;overflow-x: hidden;overflow-y:hidden;background-image: url(bg_image39.jpg);background-size: 700px 500px;background-position: 0px 150px;background-repeat: repeat-x;" >
+    <div style="background-color:skyblue;;height:100px;" id="h">
+        <img src="govt_logo.jpg" align="left" width="100px" height="100px" style ="position: relative; left: 350px">
+    <h1 style="font-family: 'Exo', sans-serif;position: relative;left:-170px;"><STRONG>ಸ ಹಿ ಪ್ರಾ ಶಾಲೆ ಬಾಳೇಸರ</STRONG></h1>
+		<h6 style="font-family: 'Exo', sans-serif;position: relative;left :120px;top:-35px;">- ಶಿರಸಿ ಶೈಕ್ಷಣಿಕ ಜಿಲ್ಲೆ, ಉತ್ತರ ಕನ್ನಡ</h6>
     </div>
     
 
   <ul>
-    <li style="font-size: 20px"><a href="bikezone.html">HOME</a></li>
-    <li class="motor" style="font-size: 20px">
-      <a href="javascript:void(0)" class="dropbtn">Student Profile</a>
+    <li><a href="index.html" style=" width: 30px;height:20px"><img src="home.png" height=25px width=25px ></a>
+		<li style="font-size: 20px"><a href="about_us.html">About Us</a></li>
+      <li style="font-size: 20px"><a href="teachers.html">Teachers</a></li>
+      <li style="font-size: 20px"><a href="sdmc.html">SDMC</a></li>
+      <li style="font-size: 20px"><a href="donors.html">Donators</a></li>
+      <li style="font-size: 20px"><a href="gallery.html">Gallery</a></li>
+       <li class="motor" style="font-size: 20px">
+      <a href="javascript:void(0)" class="dropbtn">Students</a>
       <div class="motor-cycle" style="font-size:17px;">
-        <a href="bike.html">1st</a>
-          <a href="superbike.html">2nd</a>
-          <a href="superbike.html">3rd</a>
-          <a href="superbike.html">4th</a>
-          <a href="superbike.html">5th</a>
-          <a href="superbike.html">6th</a>
-          <a href="superbike.html">7th</a>
+        <a href="standard_1.html">1st standard</a>
+        <a href="standard_2.html">2nd standard</a>
+		<a href="standard_3.html">3rd standard</a>
+        <a href="standard_4.html">4th standard</a>
+		<a href="standard_5.html">5th standard</a>
+        <a href="standard_6.html">6th standard</a>
+		<a href="standard_7.html">7th standard</a>
       </div>
     </li>
-      <li style="font-size: 20px"><a href="stud_profile.html">Teachers</a></li>
-      <li style="font-size: 20px"><a href="stud_profile.html">SDMC</a></li>
-      <li style="font-size: 20px"><a href="stud_profile.html">Donators</a></li>
-      <li style="font-size: 20px"><a href="stud_profile.html">Donators</a></li>
-      <li style="font-size: 20px"><a href="stud_profile.html"></a>Gallery</li>
-      <li style="font-size: 20px"><a href="stud_profile.html"></a>Student club</li>
-      <button id="myBtn"style="font-size: 20px;float:right;background-color:pink;border: none;under;position: relative;top:10px;left:-10px;">CONTACT US</button>
+	  <li class="motor" style="font-size: 20px">
+      <a href="javascript:void(0)" class="dropbtn">Learning Corner</a>
+      <div class="motor-cycle" style="font-size:17px;width:   165px;">
+		  <div class="dropdown" style="height:30px;padding-top: 10px;" >
+  <span style="font-size: 20px;padding-left: 15px;">1st standard</span>
+  <div class="dropdown-content" style="position: relative;left:100px;padding-bottom: 0px;padding-top: 0px;">
+  <a href="lkstandard_1.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Kannada</a>
+	  <a href="lestandard_1.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">English</a>
+	  <a href="lmstandard_1.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Maths</a>
+	  <a href="lsstandard_1.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Science</a>
+  </div>
+</div>
+		  <div class="dropdown" style="height:30px;padding-top: 10px;">
+  <span style="font-size: 20px;padding-left: 15px;">2nd standard</span>
+  <div class="dropdown-content" style="position: relative;left:100px;padding-bottom: 0px;padding-top: 0px;">
+  <a href="lkstandard_1.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Kannada</a>
+	  <a href="lestandard_2.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">English</a>
+	  <a href="lmstandard_2.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Maths</a>
+	  <a href="lsstandard_2.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Science</a>
+  </div>
+</div>
+		  <div class="dropdown" style="height:30px;padding-top: 10px;">
+  <span style="font-size: 20px;padding-left: 15px;">3rd standard</span>
+  <div class="dropdown-content" style="position: relative;left:100px;padding-bottom: 0px;padding-top: 0px;">
+  <a href="lkstandard_1.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Kannada</a>
+	  <a href="lestandard_3.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">English</a>
+	  <a href="lmstandard_3.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Maths</a>
+	  <a href="lsstandard_3.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Science</a>
+  </div>
+</div>
+		  <div class="dropdown" style="height:30px;padding-top: 10px;">
+  <span style="font-size: 20px;padding-left: 15px;">4th standard</span>
+  <div class="dropdown-content" style="position: relative;left:100px;padding-bottom: 0px;padding-top: 0px;">
+  <a href="lkstandard_1.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Kannada</a>
+	  <a href="lestandard_4.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">English</a>
+	  <a href="lmstandard_4.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Maths</a>
+	  <a href="lsstandard_4.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Science</a>
+  </div>
+</div>
+		  <div class="dropdown" style="height:30px;padding-top: 10px;">
+  <span style="font-size: 20px;padding-left: 15px;">5th standard</span>
+  <div class="dropdown-content" style="position: relative;left:100px;padding-bottom: 0px;padding-top: 0px;">
+  <a href="lkstandard_5.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Kannada</a>
+	  <a href="lestandard_5.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">English</a>
+	  <a href="lmstandard_5.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Maths</a>
+	  <a href="lsstandard_5.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Science</a>
+  </div>
+</div>
+		  <div class="dropdown" style="height:30px;padding-top: 10px;">
+  <span style="font-size: 20px;padding-left: 15px;">6th standard</span>
+  <div class="dropdown-content" style="position: relative;left:100px;padding-bottom: 0px;padding-top: 0px;">
+  <a href="lkstandard_6.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Kannada</a>
+	  <a href="lestandard_6.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">English</a>
+	  <a href="lhstandard_6.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Hindi</a>
+	  <a href="lmstandard_6.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Maths</a>
+	  <a href="lsstandard_6.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Science</a>
+	  <a href="lssstandard_6.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Social Science</a>
+	  
+  </div>
+</div>
+		  <div class="dropdown" style="height:30px;padding-top: 10px;">
+  <span style="font-size: 20px;padding-left: 15px;">7th standard</span>
+  <div class="dropdown-content" style="position: relative;left:100px;padding-bottom: 0px;padding-top: 0px;">
+  <a href="lkstandard_7.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Kannada</a>
+	  <a href="lestandard_7.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">English</a>
+	  <a href="lhstandard_7.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Hindi</a>
+	  <a href="lmstandard_7.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Maths</a>
+	  <a href="lsstandard_7.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Science</a>
+	  <a href="lssstandard_7.html" style="padding-left: 5px;padding-bottom: 2px;padding-top: 2px;">Social Science</a>
+	  
+  </div>
+</div>
+      </div>
+    </li>
+	 
+	  <li style="font-size: 20px"><a href="facilities.html">Facilities</a></li>
+	        
+<button id="myBtn" style="font-size: 20px;float:right;background-color:pink;border: none;position: relative;top:13px;left:-10px;font-family:inherit">Contact Us</button>
   </ul>
-   <div class="w3-content w3-section" style="max-width:1500px; max-height:1000px; margin-top: 165px; ">
+   <div class="w3-content w3-section" style="position: fixed;top :-15px; margin-top: 165px; ">
+   <img class="mySlides" src="s1.jpeg"  style="height:500px; width : 120%;position: relative;left :300px;">    
+   <img class="mySlides" src="s1_2.jpeg" style="height:500px; width : 120%;position: relative;left :300px;" >
+   <img class="mySlides" src="s12.jpeg" style="height:500px; width : 120%;position: relative;left :300px;" >
        
-  <img class="mySlides" src="././public/images/p8.jpg" style="height:550px; width:70%;">
-  <img class="mySlides" src="././public/images/h1.jpg" style="height:550px; width:70%;">
-  <img class="mySlides" src="././public/images/p12.jpg" style="height:550px; width: 70%">
-  <img class="mySlides" src="././public/images/p7.jpg" style="height:550px; width: 70%;">
-       <h2 style="color:white;position: relative;top:-550px;left:800px;font-family: sans-serif;">ABOUT US:</h2>
-    <pre style="color:white;position: relative;top:-530px;left:800px;font-size:20px;color:cornsilk;">-----------------</pre>
+   <!-- <pre style="color:white;position: relative;bottom : 400px;left:800px;font-size:20px;color:cornsilk;">ಸ ಹಿ ಪ್ರಾ ಶಾಲೆ ಬಾಳೇಸರ</pre>-->
         
 </div>
+	<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content1" style="position: relative;top: 100px;background-color: black">
+    <span class="close1">&times;</span>
+    <h2 style="color: white;height:10px;">CONTACT US:</h2>
+	<img src="locate.png"  height="35" width="35">
+  <h3 style="height:10px;color:white;position: relative;top:-50px;left:50px;"><pre>GHPS Balesar
+At    : Balesar,
+Taluk :  Siddapur, 
+Uttara Kannada -581340
+</pre></h3>
+    <img src="phone.jpg"  height="25" width="25">
+    <h3 style="height:10px;color:white;position: relative;top:-46px;left:50px;"> 08389 295500</h3>
+    <img src="mail.jpg"  height="35" width="35" style="position: relative;top:-30px;"><h3 style="height:10px;color:white;position: relative;top:-80px;left:50px;">   hpsbalesar@gmail.com
+	  </h3>
+		</div>
+	</div>
+
+
+
+
     
 <script>
 var myIndex = 0;
@@ -182,65 +339,24 @@ function carousel() {
     setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
+	
+	
     
 
-<!-- The Modal -->
-<div id="myModal" class="modal"  >
 
-  <!-- Modal content -->
-  <div class="modal-content" style="position: relative;top:150px;left:200px;width:640px;height:30px;">
-    
-      <span class="close" style="position: relative;left:-10px;color:black;">&times;</span>
-      <div class="container" style="width:640px;background-color: white;">
-  <div style="text-align:center" >
-    <h2>Fill this form</h2>
-    
-  </div>
-  <div class="row" >
-    <div class="column" style="width:600px;height:450px;">
-      <form  >
-          
-        <label for="fname" style="height: 10px;" >First Name</label>
-        <input type="text" id="fname" name="firstname" style="width:500px;height:5px;" placeholder="Your name.." required >
-          
-        <label for="lname" style="position: relative;top:30px;left:-530px;">Last Name</label>
-         <input type="text" id="lname" name="lastname"  style="width:500px;height:10px;" placeholder="Your last name.." required>
-          
-        <label for="country" style="position: relative;top:30px;left:-530px;">Country</label>
-          
-        <select id="country" name="country" style="width:520px; ">
-            <option value="australia">India</option>
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
-         
-        <label for="subject" style="position: relative;top:35px;left:-525px;">Subject</label>
-              
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:60px;width:500px;position: relative;top:5px;"></textarea>
-          <input type="submit"  value="Submit" style="position: relative;top:10px;" onclick="openWin();">
-      </form>
-    </div>
-  </div>
-</div>
+<!--<footer style="width:1240px;height: 200px;position: ">
+    <h2 style="color: white;height:10px;">CONTACT US:</h2>
+    <img src="image/locate.png"  height="35" width="35">
+  <h3 style="height:10px;color:white;position: relative;top:-50px;left:50px;"><pre>A-3, Industrial Area, Noida-Dadri Road,
+Surajpur -201306
+Distt. Gautam Budh Nagar (U.P.) India.</pre></h3>
+    <img src="image/phone.jpg"  height="25" width="25">
+    <h3 style="height:10px;color:white;position: relative;top:-50px;left:50px;"> +91 120 2350695, 2350634, 6718210</h3>
+    <img src="image/mail.jpg"  height="35" width="35" style="position: relative;top:-30px;">
+    <h3 style="height:10px;color:white;position: relative;top:-80px;left:50px;">   yes@yamaha-motor-india.com<pre  >Copyright © India YAMAHA Motor Pvt. Ltd. All rights reserved</pre></h3>
+</footer>
 
-
-
-
-    </div>
-    
-  </div>
-    <script>
-        function openWin()
-        {
-            alert("Successfully submitted");
-        }
-    </script>
-
-
-    
-
-<script>
+ --><script>
 // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -248,7 +364,7 @@ var modal = document.getElementById('myModal');
 var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close1")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
@@ -267,19 +383,5 @@ window.onclick = function(event) {
     }
 }
 </script>
-    
-<footer style="width:1240px;height: 200px;">
-    <h2 style="color: white;height:10px;">CONTACT US:</h2>
-    <img src="image/locate.png"  height="35" width="35">
-  <h3 style="height:10px;color:white;position: relative;top:-50px;left:50px;"><pre>A-3, Industrial Area, Noida-Dadri Road,
-Surajpur -201306
-Distt. Gautam Budh Nagar (U.P.) India.</pre></h3>
-    <img src="image/phone.jpg"  height="25" width="25">
-    <h3 style="height:10px;color:white;position: relative;top:-50px;left:50px;"> +91 120 2350695, 2350634, 6718210</h3>
-    <img src="image/mail.jpg"  height="35" width="35" style="position: relative;top:-30px;">
-    <h3 style="height:10px;color:white;position: relative;top:-80px;left:50px;">   yes@yamaha-motor-india.com<pre  >Copyright © India YAMAHA Motor Pvt. Ltd. All rights reserved</pre></h3>
-</footer>
-
- 
     </body>
 </html>
